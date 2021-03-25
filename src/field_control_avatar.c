@@ -81,7 +81,7 @@ void FieldClearPlayerInput(struct FieldInput *input)
     input->heldDirection2 = FALSE;
     input->tookStep = FALSE;
     input->pressedBButton = FALSE;
-    input->pressedRButton = FALSE;
+    input->pressedBButton = FALSE;
     input->input_field_1_1 = FALSE;
     input->input_field_1_2 = FALSE;
     input->input_field_1_3 = FALSE;
@@ -106,8 +106,8 @@ void FieldGetPlayerInput(struct FieldInput *input, u16 newKeys, u16 heldKeys)
                 input->pressedAButton = TRUE;
             if (newKeys & B_BUTTON)
                 input->pressedBButton = TRUE;
-            if (newKeys & R_BUTTON)
-                input->pressedRButton = TRUE;
+            if (newKeys & B_BUTTON)
+                input->pressedBButton = TRUE;
         }
 
         if (heldKeys & (DPAD_UP | DPAD_DOWN | DPAD_LEFT | DPAD_RIGHT))
@@ -192,7 +192,7 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
     if (input->pressedSelectButton && UseRegisteredKeyItemOnField() == TRUE)
         return TRUE;
     
-    if (input->pressedRButton && EnableAutoRun())
+    if (input->pressedBButton && EnableAutoRun())
         return TRUE;
 
     return FALSE;
@@ -1015,9 +1015,6 @@ extern const u8 EventScript_DisableAutoRun[];
 extern const u8 EventScript_EnableAutoRun[];
 static bool8 EnableAutoRun(void)
 {
-    if (!FlagGet(FLAG_SYS_B_DASH))
-        return FALSE;   //auto run unusable until you get running shoes
-
     PlaySE(SE_SELECT);
     if (gSaveBlock2Ptr->autoRun)
     {
