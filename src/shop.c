@@ -97,11 +97,8 @@ static const u16 sShopInventory_ZeroBadges[] = {
     ITEM_POKE_BALL,
     ITEM_POTION,
     ITEM_ANTIDOTE,
-    ITEM_BURN_HEAL,
-    ITEM_ICE_HEAL,
     ITEM_AWAKENING,
     ITEM_PARALYZE_HEAL,
-    ITEM_REVIVE,
     ITEM_NONE
 };
 
@@ -115,7 +112,8 @@ static const u16 sShopInventory_OneBadge[] = {
     ITEM_ICE_HEAL,
     ITEM_AWAKENING,
     ITEM_PARALYZE_HEAL,
-    ITEM_REVIVE,
+    ITEM_ESCAPE_ROPE,
+    ITEM_REPEL,
     ITEM_NONE
 };
 
@@ -131,6 +129,8 @@ static const u16 sShopInventory_TwoBadges[] = {
     ITEM_PARALYZE_HEAL,
     ITEM_REVIVE,
     ITEM_POKE_DOLL,
+    ITEM_ESCAPE_ROPE,
+    ITEM_REPEL,
     ITEM_NONE
 };
 
@@ -145,8 +145,9 @@ static const u16 sShopInventory_ThreeBadges[] = {
     ITEM_AWAKENING,
     ITEM_PARALYZE_HEAL,
     ITEM_REVIVE,
-    ITEM_REPEL,
     ITEM_POKE_DOLL,
+    ITEM_ESCAPE_ROPE,
+    ITEM_REPEL,
     ITEM_NONE
 };
 
@@ -162,8 +163,10 @@ static const u16 sShopInventory_FourBadges[] = {
     ITEM_AWAKENING,
     ITEM_PARALYZE_HEAL,
     ITEM_REVIVE,
-    ITEM_REPEL,
     ITEM_POKE_DOLL,
+    ITEM_ESCAPE_ROPE,
+    ITEM_REPEL,
+    ITEM_SUPER_REPEL,
     ITEM_NONE
 };
 
@@ -179,10 +182,12 @@ static const u16 sShopInventory_FiveBadges[] = {
     ITEM_ICE_HEAL,
     ITEM_AWAKENING,
     ITEM_PARALYZE_HEAL,
+    ITEM_FULL_HEAL,
     ITEM_REVIVE,
+    ITEM_POKE_DOLL,
+    ITEM_ESCAPE_ROPE,
     ITEM_REPEL,
     ITEM_SUPER_REPEL,
-    ITEM_POKE_DOLL,
     ITEM_NONE
 };
 
@@ -200,9 +205,10 @@ static const u16 sShopInventory_SixBadges[] = {
     ITEM_PARALYZE_HEAL,
     ITEM_FULL_HEAL,
     ITEM_REVIVE,
+    ITEM_POKE_DOLL,
+    ITEM_ESCAPE_ROPE,
     ITEM_REPEL,
     ITEM_SUPER_REPEL,
-    ITEM_POKE_DOLL,
     ITEM_NONE
 };
 
@@ -221,10 +227,11 @@ static const u16 sShopInventory_SevenBadges[] = {
     ITEM_PARALYZE_HEAL,
     ITEM_FULL_HEAL,
     ITEM_REVIVE,
+    ITEM_POKE_DOLL,
+    ITEM_ESCAPE_ROPE,
     ITEM_REPEL,
     ITEM_SUPER_REPEL,
     ITEM_MAX_REPEL,
-    ITEM_POKE_DOLL,
     ITEM_NONE
 };
 
@@ -244,10 +251,11 @@ static const u16 sShopInventory_EightBadges[] = {
     ITEM_PARALYZE_HEAL,
     ITEM_FULL_HEAL,
     ITEM_REVIVE,
+    ITEM_POKE_DOLL,
+    ITEM_ESCAPE_ROPE,
     ITEM_REPEL,
     ITEM_SUPER_REPEL,
     ITEM_MAX_REPEL,
-    ITEM_POKE_DOLL,
     ITEM_NONE
 };
 
