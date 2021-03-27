@@ -1631,9 +1631,9 @@ static const u8 sTM19Desc[] = _(
     "this move inflicts.");
 
 static const u8 sTM20Desc[] = _(
-    "Prevents status\n"
-    "abnormality with a\n"
-    "mystical power.");
+    "The user shoots a\n"
+    "flame at target\n"
+    "to inflict burn.");
 
 static const u8 sTM21Desc[] = _(
     "The less the user\n"
