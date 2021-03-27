@@ -1546,9 +1546,9 @@ static const u8 sTM02Desc[] = _(
     "sharp claws.");
 
 static const u8 sTM03Desc[] = _(
-    "Generates an\n"
-    "ultrasonic wave\n"
-    "that may confuse.");
+    "The user attacks\n" 
+    "through defense\n"
+    "with a psychic wave");
 
 static const u8 sTM04Desc[] = _(
     "Raises Sp. Atk and\n"
