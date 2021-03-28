@@ -8216,7 +8216,7 @@ const struct BaseStats gBaseStats[] =
         .baseSpeed     = 28,
         .baseSpAttack  = 51,
         .baseSpDefense = 23,
-        .type1 = TYPE_ELECTRIC,
+        .type1 = TYPE_NORMAL,
         .type2 = TYPE_ELECTRIC,
         .catchRate = 190,
         .expYield = 48,
@@ -8227,7 +8227,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_MONSTER,
         .eggGroup2 = EGG_GROUP_FIELD,
-        .abilities = {ABILITY_GALVANIZE, ABILITY_NONE},
+        .abilities = {ABILITY_PUNK_ROCK, ABILITY_NONE},
         .bodyColor = BODY_COLOR_PINK,
         .noFlip = FALSE,
     },
@@ -8240,7 +8240,7 @@ const struct BaseStats gBaseStats[] =
         .baseSpeed     = 48,
         .baseSpAttack  = 71,
         .baseSpDefense = 43,
-        .type1 = TYPE_ELECTRIC,
+        .type1 = TYPE_NORMAL,
         .type2 = TYPE_ELECTRIC,
         .catchRate = 120,
         .expYield = 126,
@@ -8251,7 +8251,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_MONSTER,
         .eggGroup2 = EGG_GROUP_FIELD,
-        .abilities = {ABILITY_GALVANIZE, ABILITY_NONE},
+        .abilities = {ABILITY_PUNK_ROCK, ABILITY_NONE},
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = FALSE,
     },
@@ -8268,7 +8268,7 @@ const struct BaseStats gBaseStats[] =
         #else
             .baseSpDefense = 63,
         #endif
-        .type1 = TYPE_ELECTRIC,
+        .type1 = TYPE_NORMAL,
         .type2 = TYPE_ELECTRIC,
         .catchRate = 45,
         .expYield = 221,
@@ -8279,7 +8279,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroup1 = EGG_GROUP_MONSTER,
         .eggGroup2 = EGG_GROUP_FIELD,
-        .abilities = {ABILITY_GALVANIZE, ABILITY_NONE},
+        .abilities = {ABILITY_PUNK_ROCK, ABILITY_NONE},
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = FALSE,
     },
@@ -8408,7 +8408,7 @@ const struct BaseStats gBaseStats[] =
         .baseSpeed     = 50,
         .baseSpAttack  = 35,
         .baseSpDefense = 35,
-        .type1 = TYPE_FAIRY,
+        .type1 = TYPE_NORMAL,
         .type2 = TYPE_FAIRY,
         .catchRate = 255,
         .expYield = 52,
@@ -8420,10 +8420,10 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_FAIRY,
         #ifdef BATTLE_ENGINE
-            .abilities = {ABILITY_CUTE_CHARM, ABILITY_NORMALIZE},
-            .abilityHidden = ABILITY_WONDER_SKIN,
+            .abilities = {ABILITY_NORMALIZE, ABILITY_NORMALIZE},
+            .abilityHidden = ABILITY_NORMALIZE,
         #else
-            .abilities = {ABILITY_CUTE_CHARM, ABILITY_NONE},
+            .abilities = {ABILITY_NORMALIZE, ABILITY_NORMALIZE},
         #endif
         .bodyColor = BODY_COLOR_PINK,
         .noFlip = FALSE,
@@ -8441,8 +8441,8 @@ const struct BaseStats gBaseStats[] =
         #else
             .baseSpeed     = 70,
         #endif
-        .type1 = TYPE_FAIRY,
-        .type2 = TYPE_DARK,
+        .type1 = TYPE_NORMAL,
+        .type2 = TYPE_FAIRY,
         .catchRate = 60,
         .expYield = 140,
         .evYield_HP        = 1,
@@ -8454,10 +8454,10 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_FAIRY,
         #ifdef BATTLE_ENGINE
-            .abilities = {ABILITY_CUTE_CHARM, ABILITY_NORMALIZE},
-            .abilityHidden = ABILITY_WONDER_SKIN,
+            .abilities = {ABILITY_NORMALIZE, ABILITY_NORMALIZE},
+            .abilityHidden = ABILITY_NORMALIZE,
         #else
-            .abilities = {ABILITY_CUTE_CHARM, ABILITY_NONE},
+            .abilities = {ABILITY_NORMALIZE, ABILITY_NORMALIZE},
         #endif
         .bodyColor = BODY_COLOR_PURPLE,
         .noFlip = FALSE,
