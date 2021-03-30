@@ -13,7 +13,7 @@ LittlerootTown_MapScripts:: @ 81E7DCB
 	@ 1: Met Rival
 	@ 2: Saving Birch
 	@ 3: Received Pokedex
-	@ 4: Received Running Shoes
+	@ 4: Received Fishing Rod
 
 	@ State descriptions for VAR_LITTLEROOT_INTRO_STATE
 	@ 1: In truck male
@@ -449,45 +449,45 @@ LittlerootTown_EventScript_PlayersHouseSignFemale:: @ 81E81B2
 	msgbox LittlerootTown_Text_PlayersHouse, MSGBOX_DEFAULT
 	return
 
-LittlerootTown_EventScript_GiveRunningShoesTrigger0:: @ 81E81BB
+LittlerootTown_EventScript_GiveOldRodTrigger0:: @ 81E81BB
 	lockall
 	setvar VAR_0x8008, 0
 	setobjectxy LOCALID_MOM, 10, 9
-	goto LittlerootTown_EventScript_GiveRunningShoesTrigger
+	goto LittlerootTown_EventScript_GiveOldRodTrigger
 	end
 
-LittlerootTown_EventScript_GiveRunningShoesTrigger1:: @ 81E81CE
+LittlerootTown_EventScript_GiveOldRodTrigger1:: @ 81E81CE
 	lockall
 	setvar VAR_0x8008, 1
 	setobjectxy LOCALID_MOM, 11, 9
-	goto LittlerootTown_EventScript_GiveRunningShoesTrigger
+	goto LittlerootTown_EventScript_GiveOldRodTrigger
 	end
 
-LittlerootTown_EventScript_GiveRunningShoesTrigger2:: @ 81E81E1
+LittlerootTown_EventScript_GiveOldRodTrigger2:: @ 81E81E1
 	lockall
 	setvar VAR_0x8008, 2
-	goto LittlerootTown_EventScript_GiveRunningShoesTrigger
+	goto LittlerootTown_EventScript_GiveOldRodTrigger
 	end
 
-LittlerootTown_EventScript_GiveRunningShoesTrigger3:: @ 81E81ED
+LittlerootTown_EventScript_GiveOldRodTrigger3:: @ 81E81ED
 	lockall
 	setvar VAR_0x8008, 3
-	goto LittlerootTown_EventScript_GiveRunningShoesTrigger
+	goto LittlerootTown_EventScript_GiveOldRodTrigger
 	end
 
-LittlerootTown_EventScript_GiveRunningShoesTrigger4:: @ 81E81F9
+LittlerootTown_EventScript_GiveOldRodTrigger4:: @ 81E81F9
 	lockall
 	setvar VAR_0x8008, 4
-	goto LittlerootTown_EventScript_GiveRunningShoesTrigger
+	goto LittlerootTown_EventScript_GiveOldRodTrigger
 	end
 
-LittlerootTown_EventScript_GiveRunningShoesTrigger5:: @ 81E8205
+LittlerootTown_EventScript_GiveOldRodTrigger5:: @ 81E8205
 	lockall
 	setvar VAR_0x8008, 5
-	goto LittlerootTown_EventScript_GiveRunningShoesTrigger
+	goto LittlerootTown_EventScript_GiveOldRodTrigger
 	end
 
-LittlerootTown_EventScript_GiveRunningShoesTrigger:: @ 81E8211
+LittlerootTown_EventScript_GiveOldRodTrigger:: @ 81E8211
 	checkplayergender
 	compare VAR_RESULT, MALE
 	call_if_eq LittlerootTown_EventScript_MomNoticePlayerMale
@@ -505,13 +505,13 @@ LittlerootTown_EventScript_GiveRunningShoesTrigger:: @ 81E8211
 	call_if_eq LittlerootTown_EventScript_MomApproachPlayerMale
 	compare VAR_RESULT, FEMALE
 	call_if_eq LittlerootTown_EventScript_MomApproachPlayerFemale
-	call LittlerootTown_EventScript_GiveRunningShoes
+	call LittlerootTown_EventScript_GiveOldRod
 	checkplayergender
 	compare VAR_RESULT, MALE
 	call_if_eq LittlerootTown_EventScript_MomReturnHomeMale
 	compare VAR_RESULT, FEMALE
 	call_if_eq LittlerootTown_EventScript_MomReturnHomeFemale
-	goto LittlerootTown_EventScript_SetReceivedRunningShoes
+	goto LittlerootTown_EventScript_SetReceivedOldRod
 	end
 
 LittlerootTown_EventScript_SetHomeDoorCoordsMale:: @ 81E8281
@@ -922,39 +922,39 @@ LittlerootTown_Movement_MomExitThroughDoor: @ 81E863B
 
 LittlerootTown_EventScript_Mom:: @ 81E863D
 	lock
-	faceplayer
-	checkplayergender
-	compare VAR_RESULT, MALE
-	call_if_eq LittlerootTown_EventScript_SetHomeDoorCoordsMale
-	compare VAR_RESULT, FEMALE
-	call_if_eq LittlerootTown_EventScript_SetHomeDoorCoordsFemale
-	call LittlerootTown_EventScript_GiveRunningShoes
-	applymovement LOCALID_MOM, Common_Movement_WalkInPlaceFastestUp
-	waitmovement 0
-	opendoor VAR_0x8009, VAR_0x800A
-	waitdooranim
-	applymovement LOCALID_MOM, LittlerootTown_Movement_MomExitThroughDoor
-	waitmovement 0
-	hideobjectat LOCALID_MOM, MAP_LITTLEROOT_TOWN
-	closedoor VAR_0x8009, VAR_0x800A
-	waitdooranim
-	goto LittlerootTown_EventScript_SetReceivedRunningShoes
-	end
+    faceplayer
+    checkplayergender
+    compare VAR_RESULT, MALE
+    call_if_eq LittlerootTown_EventScript_SetHomeDoorCoordsMale
+    compare VAR_RESULT, FEMALE
+    call_if_eq LittlerootTown_EventScript_SetHomeDoorCoordsFemale
+    call LittlerootTown_EventScript_GiveOldRod
+    applymovement LOCALID_MOM, Common_Movement_WalkInPlaceFastestUp
+    waitmovement 0
+    opendoor VAR_0x8009, VAR_0x800A
+    waitdooranim
+    applymovement LOCALID_MOM, LittlerootTown_Movement_MomExitThroughDoor
+    waitmovement 0
+    hideobjectat LOCALID_MOM, MAP_LITTLEROOT_TOWN
+    closedoor VAR_0x8009, VAR_0x800A
+    waitdooranim
+    end
 
-LittlerootTown_EventScript_SetReceivedRunningShoes:: @ 81E8686
+LittlerootTown_EventScript_SetReceivedOldRod:: @ 81E8686
 	removeobject LOCALID_MOM
 	setflag FLAG_SYS_B_DASH
 	setvar VAR_LITTLEROOT_TOWN_STATE, 4
 	release
 	end
 
-LittlerootTown_EventScript_GiveRunningShoes:: @ 81E8693
-	msgbox LittlerootTown_Text_WearTheseRunningShoes, MSGBOX_DEFAULT
+LittlerootTown_EventScript_GiveOldRod:: @ 81E8693
+	msgbox LittlerootTown_Text_TakeThisOldRod, MSGBOX_DEFAULT
+	giveitem ITEM_OLD_ROD
 	playfanfare MUS_OBTAIN_ITEM
-	message LittlerootTown_Text_SwitchShoesWithRunningShoes
+	message LittlerootTown_Text_ObtainedOldRod
 	waitfanfare
-	setflag FLAG_RECEIVED_RUNNING_SHOES
-	msgbox LittlerootTown_Text_ExplainRunningShoes, MSGBOX_DEFAULT
+	setflag FLAG_RECEIVED_OLD_ROD
+	msgbox LittlerootTown_Text_ExplainOldRod, MSGBOX_DEFAULT
 	msgbox LittlerootTown_Text_ComeHomeIfAnythingHappens, MSGBOX_DEFAULT
 	closemessage
 	delay 30
@@ -975,7 +975,7 @@ LittlerootTown_Text_OurNewHomeLetsGoInside: @ 81E86BC
 LittlerootTown_Text_WaitPlayer: @ 81E87E1
 	.string "MOM: Wait, {PLAYER}!$"
 
-LittlerootTown_Text_WearTheseRunningShoes: @ 81E87F0
+LittlerootTown_Text_TakeThisOldRod: @ 81E87F0
 	.string "MOM: {PLAYER}! {PLAYER}! Did you\n"
 	.string "introduce yourself to PROF. BIRCH?\p"
 	.string "Oh! What an adorable POKéMON!\n"
@@ -983,20 +983,20 @@ LittlerootTown_Text_WearTheseRunningShoes: @ 81E87F0
 	.string "You're your father's child, all right.\n"
 	.string "You look good together with POKéMON!\p"
 	.string "Here, honey! If you're going out on an\n"
-	.string "adventure, wear these RUNNING SHOES.\p"
-	.string "They'll put a zip in your step!$"
+	.string "adventure, take this fishing rod.\p"
+	.string "you'll be able to catch more kinds\n"
+	.string "of pokemon!$"
 
-LittlerootTown_Text_SwitchShoesWithRunningShoes: @ 81E8925
-	.string "{PLAYER} switched shoes with the\n"
-	.string "RUNNING SHOES.$"
+LittlerootTown_Text_ObtainedOldRod: @ 81E8925
+	.string "{PLAYER} obtained the Old Rod.$"
 
-LittlerootTown_Text_ExplainRunningShoes: @ 81E894F
-	.string "MOM: {PLAYER}, those shoes came with\n"
-	.string "instructions.\p"
-	.string "“Press the B Button while wearing these\n"
-	.string "RUNNING SHOES to run extra-fast!\p"
-	.string "“Slip on these RUNNING SHOES and race\n"
-	.string "in the great outdoors!”$"
+LittlerootTown_Text_ExplainOldRod: @ 81E894F
+	.string "MOM: {PLAYER}, this rod came with\n"
+	.string "these instructions.\p"
+	.string "“Press the A Button at the correct\n"
+	.string "time whilst fishing to reel it in!\p"
+	.string "You can also register it using the\n"
+	.string "Select Button!" Have fun honey!$"
 
 LittlerootTown_Text_ComeHomeIfAnythingHappens: @ 81E8A03
 	.string "… … … … … … … …\n"
