@@ -449,45 +449,45 @@ LittlerootTown_EventScript_PlayersHouseSignFemale:: @ 81E81B2
 	msgbox LittlerootTown_Text_PlayersHouse, MSGBOX_DEFAULT
 	return
 
-LittlerootTown_EventScript_GiveOldRodTrigger0:: @ 81E81BB
+LittlerootTown_EventScript_GiveOldRodTrigger0::
 	lockall
 	setvar VAR_0x8008, 0
 	setobjectxy LOCALID_MOM, 10, 9
 	goto LittlerootTown_EventScript_GiveOldRodTrigger
 	end
 
-LittlerootTown_EventScript_GiveOldRodTrigger1:: @ 81E81CE
+LittlerootTown_EventScript_GiveOldRodTrigger1::
 	lockall
 	setvar VAR_0x8008, 1
 	setobjectxy LOCALID_MOM, 11, 9
 	goto LittlerootTown_EventScript_GiveOldRodTrigger
 	end
 
-LittlerootTown_EventScript_GiveOldRodTrigger2:: @ 81E81E1
+LittlerootTown_EventScript_GiveOldRodTrigger2::
 	lockall
 	setvar VAR_0x8008, 2
 	goto LittlerootTown_EventScript_GiveOldRodTrigger
 	end
 
-LittlerootTown_EventScript_GiveOldRodTrigger3:: @ 81E81ED
+LittlerootTown_EventScript_GiveOldRodTrigger3::
 	lockall
 	setvar VAR_0x8008, 3
 	goto LittlerootTown_EventScript_GiveOldRodTrigger
 	end
 
-LittlerootTown_EventScript_GiveOldRodTrigger4:: @ 81E81F9
+LittlerootTown_EventScript_GiveOldRodTrigger4::
 	lockall
 	setvar VAR_0x8008, 4
 	goto LittlerootTown_EventScript_GiveOldRodTrigger
 	end
 
-LittlerootTown_EventScript_GiveOldRodTrigger5:: @ 81E8205
+LittlerootTown_EventScript_GiveOldRodTrigger5::
 	lockall
 	setvar VAR_0x8008, 5
 	goto LittlerootTown_EventScript_GiveOldRodTrigger
 	end
 
-LittlerootTown_EventScript_GiveOldRodTrigger:: @ 81E8211
+LittlerootTown_EventScript_GiveOldRodTrigger::
 	checkplayergender
 	compare VAR_RESULT, MALE
 	call_if_eq LittlerootTown_EventScript_MomNoticePlayerMale
@@ -920,7 +920,7 @@ LittlerootTown_Movement_MomExitThroughDoor: @ 81E863B
 	walk_up
 	step_end
 
-LittlerootTown_EventScript_Mom:: @ 81E863D
+LittlerootTown_EventScript_Mom::
 	lock
     faceplayer
     checkplayergender
@@ -940,14 +940,14 @@ LittlerootTown_EventScript_Mom:: @ 81E863D
     waitdooranim
     end
 
-LittlerootTown_EventScript_SetReceivedOldRod:: @ 81E8686
+LittlerootTown_EventScript_SetReceivedOldRod::
 	removeobject LOCALID_MOM
 	setflag FLAG_SYS_B_DASH
 	setvar VAR_LITTLEROOT_TOWN_STATE, 4
 	release
 	end
 
-LittlerootTown_EventScript_GiveOldRod:: @ 81E8693
+LittlerootTown_EventScript_GiveOldRod::
 	msgbox LittlerootTown_Text_TakeThisOldRod, MSGBOX_DEFAULT
 	giveitem ITEM_OLD_ROD
 	playfanfare MUS_OBTAIN_ITEM
@@ -975,7 +975,7 @@ LittlerootTown_Text_OurNewHomeLetsGoInside: @ 81E86BC
 LittlerootTown_Text_WaitPlayer: @ 81E87E1
 	.string "MOM: Wait, {PLAYER}!$"
 
-LittlerootTown_Text_TakeThisOldRod: @ 81E87F0
+LittlerootTown_Text_TakeThisOldRod:
 	.string "MOM: {PLAYER}! {PLAYER}! Did you\n"
 	.string "introduce yourself to PROF. BIRCH?\p"
 	.string "Oh! What an adorable POKéMON!\n"
@@ -987,10 +987,10 @@ LittlerootTown_Text_TakeThisOldRod: @ 81E87F0
 	.string "you'll be able to catch more kinds\n"
 	.string "of pokemon!$"
 
-LittlerootTown_Text_ObtainedOldRod: @ 81E8925
+LittlerootTown_Text_ObtainedOldRod:
 	.string "{PLAYER} obtained the Old Rod.$"
 
-LittlerootTown_Text_ExplainOldRod: @ 81E894F
+LittlerootTown_Text_ExplainOldRod:
 	.string "MOM: {PLAYER}, this rod came with\n"
 	.string "these instructions.\p"
 	.string "“Press the A Button at the correct\n"
