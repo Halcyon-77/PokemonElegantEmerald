@@ -505,7 +505,7 @@ LittlerootTown_EventScript_GiveRunningShoesTrigger:: @ 81E8211
 	call_if_eq LittlerootTown_EventScript_MomApproachPlayerMale
 	compare VAR_RESULT, FEMALE
 	call_if_eq LittlerootTown_EventScript_MomApproachPlayerFemale
-	call LittlerootTown_EventScript_GiveRunningShoes
+	call LittlerootTown_EventScript_GiveOldRod
 	checkplayergender
 	compare VAR_RESULT, MALE
 	call_if_eq LittlerootTown_EventScript_MomReturnHomeMale
@@ -943,7 +943,6 @@ LittlerootTown_EventScript_Mom:: @ 81E863D
 
 LittlerootTown_EventScript_SetReceivedRunningShoes:: @ 81E8686
 	removeobject LOCALID_MOM
-	setflag FLAG_SYS_B_DASH
 	setvar VAR_LITTLEROOT_TOWN_STATE, 4
 	release
 	end
@@ -955,6 +954,19 @@ LittlerootTown_EventScript_GiveRunningShoes:: @ 81E8693
 	waitfanfare
 	setflag FLAG_RECEIVED_RUNNING_SHOES
 	msgbox LittlerootTown_Text_ExplainRunningShoes, MSGBOX_DEFAULT
+	msgbox LittlerootTown_Text_ComeHomeIfAnythingHappens, MSGBOX_DEFAULT
+	closemessage
+	delay 30
+	return
+
+LittlerootTown_EventScript_GiveOldRod::
+	msgbox LittlerootTown_Text_TakeThisOldRod, MSGBOX_DEFAULT
+	giveitem ITEM_OLD_ROD
+	playfanfare MUS_OBTAIN_ITEM
+	message LittlerootTown_Text_ObtainedOldRod
+	waitfanfare
+	setflag FLAG_RECEIVED_OLD_ROD
+	msgbox LittlerootTown_Text_ExplainOldRod, MSGBOX_DEFAULT
 	msgbox LittlerootTown_Text_ComeHomeIfAnythingHappens, MSGBOX_DEFAULT
 	closemessage
 	delay 30
@@ -1070,3 +1082,25 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab: @ 81E8DA2
 	.string "I have something to show you.\n"
 	.string "Let's go to my LAB.$"
 
+LittlerootTown_Text_TakeThisOldRod:
+	.string "MOM: {PLAYER}! {PLAYER}! Did you\n"
+	.string "introduce yourself to PROF. BIRCH?\p"
+	.string "Oh! What an adorable POKéMON!\n"
+	.string "You got it from PROF. BIRCH. How nice!\p"
+	.string "You're your father's child, all right.\n"
+	.string "You look good together with POKéMON!\p"
+	.string "Here, honey! If you're going out on an\n"
+	.string "adventure, take this fishing rod.\p"
+	.string "you'll be able to catch more kinds\n"
+	.string "of pokemon!$"
+
+LittlerootTown_Text_ObtainedOldRod:
+	.string "{PLAYER} obtained the Old Rod.$"
+
+LittlerootTown_Text_ExplainOldRod:
+	.string "MOM: {PLAYER}, this rod came with\n"
+	.string "these instructions.\p"
+	.string "“Press the A Button at the correct\n"
+	.string "time whilst fishing to reel it in!\p"
+	.string "You can also register it using the\n"
+	.string "Select Button! Have fun honey!$"
