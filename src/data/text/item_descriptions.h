@@ -1556,9 +1556,9 @@ static const u8 sTM04Desc[] = _(
     "the mind.");
 
 static const u8 sTM05Desc[] = _(
-    "A savage roar that\n"
-    "makes the foe flee \n"
-    "to end the battle.");
+    "a fierce wind that\n"
+    "flies target upward.\n"
+    "May also confuse");
 
 static const u8 sTM06Desc[] = _(
     "Poisons the foe\n"
@@ -1671,9 +1671,9 @@ static const u8 sTM27Desc[] = _(
     "powerful this move.");
 
 static const u8 sTM28Desc[] = _(
-    "Digs underground\n"
-    "the 1st turn, then\n"
-    "strikes next turn.");
+    "The user fiercely\n"
+    "attacks the target\n"
+    "using its body.");
 
 static const u8 sTM29Desc[] = _(
     "A powerful psychic\n"
