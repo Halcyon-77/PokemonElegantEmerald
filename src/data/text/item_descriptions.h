@@ -1646,9 +1646,9 @@ static const u8 sTM22Desc[] = _(
     "attacks next turn.");
 
 static const u8 sTM23Desc[] = _(
-    "Slams the foe with\n"
-    "a hard tail. It may\n"
-    "lower Defense.");
+    "Drains the target\n"
+    "HP is restored\n"
+    "by half");
 
 static const u8 sTM24Desc[] = _(
     "A powerful electric\n"
@@ -1785,6 +1785,79 @@ static const u8 sTM50Desc[] = _(
     "attack, but sharply\n"
     "lowers Sp. Atk.");
 
+static const u8 sTM51Desc[] = _(
+    "The foe is stabbed\n"
+    "steeped in poison.\n"
+    "It may poison the foe.");
+
+static const u8 sTM52Desc[] = _(
+    "User heightens its\n"
+    "focus and unleashes.\n"
+    "May lower Sp. Def.");
+
+static const u8 sTM53Desc[] = _(
+    "The user draws power\n"
+    "and fires at foe.\n"
+    "May lower Sp. Def.");
+
+static const u8 sTM54Desc[] = _(
+    "User shrouds in elect\n"
+    "-ricity and hits foe.\n"
+    "also damages the user");
+
+static const u8 sTM55Desc[] = _(
+    "The user shoots boiling\n"
+    "hot water at its target.\n"
+    "May also burn.");
+
+static const u8 sTM56Desc[] = _(
+    "Target is attacked with\n"
+    "a shock wave created\n"
+    "by the user's mouth.");
+
+static const u8 sTM57Desc[] = _(
+    "The user releases\n"
+    "a dark aura.\n"
+    "May flinch.");
+
+static const u8 sTM58Desc[] = _(
+    "User damages opposing\n"
+    "Pokémon by emitting \n"
+    "a powerful flash.");
+
+static const u8 sTM59Desc[] = _(
+    "User gathers all its\n"
+    "energy and releases\n"
+    "May lower Sp. Def");
+
+static const u8 sTM60Desc[] = _(
+    "Slashes at the target\n"
+    "by crossing its\n"
+    "scythes or claws");
+
+static const u8 sTM61Desc[] = _(
+    "User strikes target.\n"
+    "Does more damage if\n"
+    "no item is being held");
+
+static const u8 sTM62Desc[] = _(
+    "A fighting dance that\n"
+    "sharply raises ATTACK.");
+
+static const u8 sTM63Desc[] = _(
+    "The user slashes with a\n"
+    "claw made from shadows.\n"
+    "Critical hits often");
+
+static const u8 sTM64Desc[] = _(
+    "User stabs the foe with\n"
+    "stones from below.\n"
+    "Critical hits more");
+
+static const u8 sTM65Desc[] = _(
+    "Creates a decoy using\n"
+    "1/4 of the user's\n"
+    "maximum HP.");
 
 static const u8 sHM01Desc[] = _(
     "Attacks the foe\n"
