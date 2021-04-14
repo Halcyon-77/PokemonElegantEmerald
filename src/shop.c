@@ -99,6 +99,7 @@ static const u16 sShopInventory_ZeroBadges[] = {
     ITEM_ANTIDOTE,
     ITEM_AWAKENING,
     ITEM_PARALYZE_HEAL,
+    ITEM_TM03,
     ITEM_NONE
 };
 
