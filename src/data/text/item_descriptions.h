@@ -1736,9 +1736,8 @@ static const u8 sTM40Desc[] = _(
     "be avoided.");
 
 static const u8 sTM41Desc[] = _(
-    "Prevents the foe\n"
-    "from using the same\n"
-    "move in a row.");
+    "A fiery punch that\n"
+    "may burn the foe.");
 
 static const u8 sTM42Desc[] = _(
     "Raises Attack when\n"
@@ -1756,9 +1755,8 @@ static const u8 sTM44Desc[] = _(
     "health and status.");
 
 static const u8 sTM45Desc[] = _(
-    "Makes it tough to\n"
-    "attack a foe of the\n"
-    "opposite gender.");
+    "An icy punch that\n"
+    "may freeze the foe.");
 
 static const u8 sTM46Desc[] = _(
     "While attacking,\n"
@@ -1771,14 +1769,14 @@ static const u8 sTM47Desc[] = _(
     "slams into the foe.");
 
 static const u8 sTM48Desc[] = _(
-    "Switches abilities\n"
-    "with the foe on the\n"
-    "turn this is used.");
+    "An electrified punch\n"
+    "that may paralyze\n"
+    "the foe.");
 
 static const u8 sTM49Desc[] = _(
-    "Steals the effects\n"
-    "of the move the foe\n"
-    "is trying to use.");
+    "Large boulders are\n"
+    "hurled. May cause\n"
+    "flinching.");
 
 static const u8 sTM50Desc[] = _(
     "Enables full-power\n"

@@ -4310,10 +4310,10 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM41_TORMENT] =
+    [ITEM_TM41_FIRE_PUNCH] =
     {
         .name = _("TM41"),
-        .itemId = ITEM_TM41_TORMENT,
+        .itemId = ITEM_TM41_FIRE_PUNCH,
         .price = 3000,
         .description = sTM41Desc,
         .importance = 1,
@@ -4358,10 +4358,10 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM45_ATTRACT] =
+    [ITEM_TM45_ICE_PUNCH] =
     {
         .name = _("TM45"),
-        .itemId = ITEM_TM45_ATTRACT,
+        .itemId = ITEM_TM45_ICE_PUNCH,
         .price = 3000,
         .description = sTM45Desc,
         .importance = 1,
@@ -4394,10 +4394,10 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM48_SKILL_SWAP] =
+    [ITEM_TM48_THUNDER_PUNCH] =
     {
         .name = _("TM48"),
-        .itemId = ITEM_TM48_SKILL_SWAP,
+        .itemId = ITEM_TM48_THUNDER_PUNCH,
         .price = 3000,
         .description = sTM48Desc,
         .importance = 1,
@@ -4406,10 +4406,10 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM49_SNATCH] =
+    [ITEM_TM49_ROCK_SLIDE] =
     {
         .name = _("TM49"),
-        .itemId = ITEM_TM49_SNATCH,
+        .itemId = ITEM_TM49_ROCK_SLIDE,
         .price = 3000,
         .description = sTM49Desc,
         .importance = 1,
